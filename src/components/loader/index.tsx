@@ -8,7 +8,7 @@ type LoaderProps = {
 
 const Loader = ({ children, loading }: LoaderProps) => {
     return loading ? (
-        <div className="flex justify-center items-center h-full">
+        <div className="flex justify-center items-center h-full w-full">
             <Spinner />
         </div>
     ) : (children)
