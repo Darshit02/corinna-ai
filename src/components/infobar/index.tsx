@@ -12,9 +12,9 @@ const InfoBar = (props: Props) => {
       <Breadcrumb />
       <div className="flex gap-3 items-center">
         <div className="">
-          <Card className="rounded-xl flex gap-3 py-3 px-4 text-ghost">
-            <Trash />
-            <Star />
+          <Card className="rounded-xl flex gap-3 py-2 px-2 text-ghost">
+            <Trash size={20}/>
+            <Star size={20} />
           </Card>
         </div>
         <Avatar>
