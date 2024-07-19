@@ -25,7 +25,7 @@ const DomainSettingspage = async ({
       plan={domain.subscription?.plan 
       || "STANDARD"
       }
-      chatBot={domain.domains[0].chatBot || any}
+      chatBot={domain.domains[0].chatBot}
       id={domain.domains[0].id}
       name={domain.domains[0].name}
       />

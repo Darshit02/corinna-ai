@@ -25,7 +25,7 @@ const MenuItem = ({ size, label, icon, path, current, onSignOut }: Props) => {
               ? "bg-white font-bold text-black"
               : "text-gray-500"
           )}
-          href={path ? "/${path}" : "#"}
+          href={path ? `/${path}` : "#"}
         >
           {icon} {label}
         </Link>
@@ -42,7 +42,7 @@ const MenuItem = ({ size, label, icon, path, current, onSignOut }: Props) => {
               ? "bg-white font-bold text-black"
               : "text-gray-500"
           )}
-          href={path ? "/${path}" : "#"}
+          href={path ? `/${path}` : "#"}
         >
           {icon}
         </Link>
