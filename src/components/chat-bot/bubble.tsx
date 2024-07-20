@@ -29,7 +29,7 @@ const Bubble = ({ message, createdAt }: Props) => {
       {message.role == 'assistant' ? (
         <Avatar className="w-5 h-5">
           <AvatarImage
-            src="https://github.com/shadcn.png"
+            src="https://ui.shadcn.com/avatars/02.png"
             alt="@shadcn"
           />
           <AvatarFallback>CN</AvatarFallback>
@@ -37,7 +37,7 @@ const Bubble = ({ message, createdAt }: Props) => {
       ) : (
         <Avatar className="w-5 h-5">
           <AvatarFallback>
-            <User />
+            <User/>
           </AvatarFallback>
         </Avatar>
       )}
