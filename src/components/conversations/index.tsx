@@ -63,21 +63,21 @@ const ConversationMenu = ({
             orientation="horizontal"
             className="mt-5"
           />
-          all
+             Under Development 😢
         </TabsContent>
         <TabsContent value="expired">
           <Separator
             orientation="horizontal"
             className="mt-5"
           />
-          expired
+         Under Development 😢
         </TabsContent>
         <TabsContent value="starred">
           <Separator
             orientation="horizontal"
             className="mt-5"
           />
-          starred
+          Under Development 😢
         </TabsContent>
       </TabsMenu>
     </div>
