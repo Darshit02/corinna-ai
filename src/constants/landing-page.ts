@@ -6,7 +6,7 @@ export const pricingCards = [
     duration: '',
     highlight: 'Key features',
     features: [' 1 domain ', '10 contacts', '10 Emails per month'],
-    priceId: '',
+    priceId: 'price_1PfiemHDhjyI3TsAtR2DMh2R',
   },
   {
     title: 'Ultimate',
@@ -16,7 +16,7 @@ export const pricingCards = [
     highlight: 'Key features',
     features: [' Unlimited domain ', '500 Contacts', '500 Emails'],
 
-    priceId: 'price_1OYxkqFj9oKEERu1KfJGWxgN',
+    priceId: 'price_1PfifQHDhjyI3TsA6CN9j9R0',
   },
   {
     title: 'Plus',
@@ -25,6 +25,6 @@ export const pricingCards = [
     duration: 'month',
     highlight: 'Everything in Starter, plus',
     features: [' 2 domain ', '50 contacts', '50 Emails per month'],
-    priceId: 'price_1OYxkqFj9oKEERu1NbKUxXxN',
+    priceId: 'price_1PfifCHDhjyI3TsArJsP2Ww9',
   },
 ]

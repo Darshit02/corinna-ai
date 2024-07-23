@@ -1,4 +1,5 @@
 import { onDomainCustomerResponses, onGetAllDomainBookings } from '@/actions/appointment'
+import { onGetDomainProductsAndConnectedAccountId } from '@/actions/payment'
 import PortalForm from '@/components/form/portal/portal-form'
 import React from 'react'
 
@@ -14,7 +15,7 @@ const CustomerSignUpForm = async (
         params
     }: Props) => {
         const questions = await onDomainCustomerResponses(params.customerid)
-        const bookings = await onGetAllDomainBookings(params.domainid)
+        const products = await onGetDomainProductsAndConnectedAccountId(params.domainid)
         
         if(!questions) return null
         return (
