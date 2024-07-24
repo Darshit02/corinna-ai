@@ -56,7 +56,10 @@ const DomainMenu = ({ domains, min }: Props) => {
                 label="Upload Icon"
                 errors={errors}
               />
-              <Button type="submit" className="w-full bg-orange text-white hover:bg-orange/90">
+              <Button
+                type="submit"
+                className="w-full bg-orange text-white hover:bg-orange/90"
+              >
                 Add Domain
               </Button>
             </form>
@@ -70,7 +73,7 @@ const DomainMenu = ({ domains, min }: Props) => {
               href={`/settings/${domain.name.split(".")[0]}`}
               key={domain.id}
               className={cn(
-                "flex gap-3 items-center justify-center hover:bg-white rounded-lg transition duration-100 ease-in-out cursor-pointer",
+                "flex gap-3 items-center  hover:bg-white rounded-lg transition duration-100 ease-in-out cursor-pointer",
                 !min ? "p-2" : "py-2",
                 domain.name.split(".")[0] == isDomain && "bg-white"
               )}
