@@ -1,6 +1,7 @@
 "use server";
 import { client } from "@/lib/prisma";
 import { clerkClient, currentUser } from "@clerk/nextjs";
+import { redirect } from "next/navigation";
 
 export const onGetSubscriptionPlan = async () => {
   try {
@@ -338,7 +339,7 @@ export const onDeleteUserDomain = async (id: string) => {
       if (deletedDomain) {
         return {
           status: 200,
-          message: `${deletedDomain.name} was deleted successfully`,
+          message: `${deletedDomain.name} was deleted successfully`, 
         };
       }
     }
