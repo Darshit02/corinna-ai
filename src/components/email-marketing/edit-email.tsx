@@ -45,7 +45,7 @@ export const EditEmail = ({
           placeholder="your email description"
           type="text"
         />
-        <Button>Save</Button>
+        <Button className='bg-orange hover:bg-orange/90 text-white'>Save</Button>
       </Loader>
     </form>
   )

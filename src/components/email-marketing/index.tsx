@@ -2,7 +2,7 @@
 import { useEmailMarketing } from '@/hooks/email-marketing/use-marketing'
 import React from 'react'
 import { Button } from '../ui/button'
-import { Plus } from 'lucide-react'
+import { Plus, Send } from 'lucide-react'
 
 import { Card, CardContent, CardDescription, CardTitle } from '../ui/card'
 import { cn, getMonthName } from '@/lib/utils'
@@ -71,6 +71,7 @@ const EmailMarketing = ({ campaign, domains, subscription }: Props) => {
           <Button
             disabled={isSelected.length == 0}
             onClick={onAddCustomersToCampaign}
+            className='bg-orange hover:bg-orange/90 text-white'
           >
             <Plus /> Add to campaign
           </Button>
@@ -78,11 +79,11 @@ const EmailMarketing = ({ campaign, domains, subscription }: Props) => {
             title="Create a new campaign"
             description="Add your customers and create a marketing campaign"
             trigger={
-              <Card className="flex gap-2 items-center px-3 cursor-pointer text-sm">
+              <Button variant="outline" className="flex gap-2 items-center px-3 cursor-pointer text-sm ">
                 <Loader loading={false}>
                   <Plus /> Create Campaign
                 </Loader>
-              </Card>
+              </Button>
             }
           >
             <form
@@ -98,7 +99,7 @@ const EmailMarketing = ({ campaign, domains, subscription }: Props) => {
                 type="text"
               />
               <Button
-                className="w-full"
+                className="w-full bg-orange hover:bg-orange/90 text-white"
                 disabled={loading}
                 type="submit"
               >
@@ -147,7 +148,7 @@ const EmailMarketing = ({ campaign, domains, subscription }: Props) => {
                           title="Edit Email"
                           description="This email will be sent to campaign members"
                           trigger={
-                            <Card className="rounded-lg cursor-pointer bg-grandis py-2 px-5 font-semibold text-sm hover:bg-orange text-gray-700">
+                            <Card className="text-white rounded-lg cursor-pointer bg-grandis py-2 px-5 font-semibold text-sm hover:bg-orange ">
                               Edit Email
                             </Card>
                           }
@@ -161,7 +162,7 @@ const EmailMarketing = ({ campaign, domains, subscription }: Props) => {
                           />
                         </Modal>
                         <Button
-                          variant="default"
+                          variant="secondary"
                           className="rounded-lg"
                           onClick={() =>
                             onBulkEmail(
@@ -170,7 +171,7 @@ const EmailMarketing = ({ campaign, domains, subscription }: Props) => {
                             )
                           }
                         >
-                          Send
+                          <Send size={20}/>
                         </Button>
                       </div>
                     </div>

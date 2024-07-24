@@ -89,7 +89,7 @@ export async function GET() {
               last_name: 'Banks',
               email: 'kathleen@bestcookieco.com',
               address: {
-                city: 'victoria ',
+                city: 'victoria ',  
                 line1: '123 State St',
                 postal_code: 'V8P 1A1',
                 state: 'BC',

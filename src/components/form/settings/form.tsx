@@ -12,6 +12,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Loader from "@/components/loader";
 import { AlignRightIcon, CheckCircle, Trash } from "lucide-react";
+import { redirect } from "next/navigation";
 
 const WelcomeMessage = dynamic(
   () => import("./greeting-message").then((props) => props.default),
@@ -90,7 +91,9 @@ const SettingsForm = ({ id, name, plan, chatBot }: Props) => {
     </div>
     <div className="flex gap-5 justify-end">
       <Button
-        onClick={onDeleteDomain}
+        onClick={onDeleteDomain || (() => {
+          redirect('/settings')
+        })}
         variant="destructive"
         type="button"
         className="px-10 h-[50px]"
