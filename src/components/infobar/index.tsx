@@ -1,8 +1,7 @@
 import React from "react";
 import Breadcrumb from "./bread-crumb";
-import { Card } from "@/components/ui/card";
-import { Headphones, Star, Trash } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
 
 type Props = {};
 
@@ -11,20 +10,13 @@ const InfoBar = (props: Props) => {
     <div className="w-full flex justify-between items-center py-1 mb-8">
       <Breadcrumb />
       <div className="flex gap-3 items-center">
-        <div className="">
-          <Card className="rounded-xl flex gap-3 py-2 px-2 text-ghost">
-            <Trash size={20}/>
-            <Star size={20} />
-          </Card>
-        </div>
-        <Avatar>
-          <AvatarFallback className="bg-orange text-white">
-            <Headphones />
-          </AvatarFallback>
-        </Avatar>
-        <Avatar>
-          <AvatarImage src="" alt="avatar" />
-          <AvatarFallback>CN</AvatarFallback>
+        <Avatar className="h-auto w-fit">
+        <SignedOut>
+            <SignInButton/>
+          </SignedOut>
+          <SignedIn>
+            <UserButton />
+          </SignedIn>
         </Avatar>
       </div>
     </div>

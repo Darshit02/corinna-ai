@@ -28,7 +28,7 @@ export default function Home() {
             Your AI powered sales assistant! Embed Corinna AI into any website 
             with just a snippet of code
           </p>
-          <Button className="bg-orange font-bold text-white px-4">
+          <Button className="bg-orange font-bold text-white px-4 hover:bg-orange/90">
             Start For Free
           </Button>
           <Image

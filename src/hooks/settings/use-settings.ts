@@ -116,6 +116,7 @@ export const useSettings = (id: string) => {
         title: 'Success',
         description: deleted.message,
       })
+      router.push("/dashboard")
       setDeleting(false)
       router.refresh()
     }
