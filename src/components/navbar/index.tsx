@@ -1,7 +1,7 @@
-import Image from 'next/image'
-import * as React from 'react'
-import { Button } from '../ui/button'
-import Link from 'next/link'
+import Image from "next/image";
+import * as React from "react";
+import { Button } from "../ui/button";
+import Link from "next/link";
 
 function NavBar() {
   return (
@@ -12,20 +12,13 @@ function NavBar() {
           alt="LOGO"
           sizes="100vw"
           style={{
-            width: '100px',
-            height: 'auto',
+            width: "100px",
+            height: "auto",
           }}
           width={0}
           height={0}
         />
       </div>
-      <ul className="gap-5 justify-between self-stretch my-auto text-sm leading-5 text-neutral-700 max-md:flex-wrap max-md:max-w-full font-normal hidden md:flex">
-        <li>Home</li>
-        <li>Pricing</li>
-        <li>News Room</li>
-        <li>Features</li>
-        <li>Contact us</li>
-      </ul>
       <Link
         href="/dashboard"
         className="bg-orange px-4 py-2 rounded-sm text-white"
@@ -33,7 +26,7 @@ function NavBar() {
         Free Trial
       </Link>
     </div>
-  )
+  );
 }
 
-export default NavBar
+export default NavBar;

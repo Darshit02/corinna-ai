@@ -1,3 +1,4 @@
+import PortalBanner from '@/components/portal/portal-banner'
 import React from 'react'
 
 type Props = {

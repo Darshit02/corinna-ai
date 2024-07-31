@@ -20,7 +20,7 @@ const ButtonHandler = (props: Props) => {
   if (currentStep === 3) {
     return (
       <div className="w-full flex flex-col gap-3 items-center">
-        <Button type="submit" className="w-full">
+        <Button type="submit" className="w-full bg-orange hover:bg-orange/90">
           Create an account
         </Button>
         <p>
@@ -34,7 +34,7 @@ const ButtonHandler = (props: Props) => {
       <div className="w-full flex flex-col gap-3 items-center">
         <Button
           type="submit"
-          className="w-full"
+          className="w-full bg-orange hover:bg-orange/90"
           {...(isName &&
             isEmail &&
             isPassword && {
@@ -64,7 +64,7 @@ const ButtonHandler = (props: Props) => {
     <div className="w-full flex flex-col gap-3 items-center">
       <Button
         type="submit"
-        className="w-full"
+        className="w-full bg-orange hover:bg-orange/90"
         onClick={() => setCurrentStep((prev: number) => prev + 1)}
       >
         Continue

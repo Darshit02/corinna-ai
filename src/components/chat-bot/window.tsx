@@ -95,12 +95,12 @@ export const BotWindow = forwardRef<HTMLDivElement, Props>(
             </div>
           </div>
           <div className="relative w-16 h-16">
-            <Image
+            {/* <Image
               src="/images/chat-icon.png"
               fill
               alt="users"
               objectFit="contain"
-            />
+            /> */}
           </div>
         </div>
         <TabsMenu
