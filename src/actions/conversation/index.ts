@@ -198,4 +198,5 @@ export const onRealTimeChat = async (
   //     role,
   //   },
   // })
+  null
 }
