@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import type { Metadata } from 'next'
 import { ClerkProvider } from '@clerk/nextjs'
 import { Plus_Jakarta_Sans } from 'next/font/google'
