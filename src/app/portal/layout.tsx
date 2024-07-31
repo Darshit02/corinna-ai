@@ -1,4 +1,3 @@
-// import PortalBanner from '@/components/portal/portal-banner'
 import React from 'react'
 
 type Props = {
@@ -10,7 +9,6 @@ const Layout = ({
 }: Props) => {
   return (
     <div className='flex flex-col h-screen'>
-        {/* <PortalBanner/> */}
         <div className="container flex justify-center flex-1 h-0">
             {children}
         </div>
